@@ -2,3 +2,90 @@
     margin: 0;
     padding: 0;
 }
+.home-container{
+    width: inherit;
+}
+.bg-cl-1{
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(0, 0, 0, 1);
+}
+.bg-cl-2{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, .8);
+}
+.bg-cl-3{
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+}
+.quotes-container{
+    padding: 0;
+    margin: 0;
+}
+.quotes-card{
+    width: 250px;
+    margin-top: 55px;
+}
+.quotes-card p{
+    text-indent: 15px;
+    text-align: justify;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.div-quote-image{
+    height: 55px;
+}
+.quote-image{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    /* left: 40px; */
+}
+.quote-logo{
+    width: 60px;
+    height: 60px;
+}
+.bars{
+    display:none;
+    opacity: 0;
+}
+.background{
+    background-color:rgba(0, 0, 0, .6);
+}
+.background a{
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.background a:hover{
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:851px){
+    .myNav{
+        display: none;
+    }
+    .bars{
+        opacity: 1;
+        display:block;
+        transition: opacity 1s ease-in-out;
+    }    
+}
+@media (max-width:576px){
+    .quotes-card{
+        width: 350px;
+        margin-top: 55px;
+    }
+    .quotes-container h1{
+        font-size: 22px;
+    } 
+    .quotes-container span{
+        font-size: 12px;
+    }
+}

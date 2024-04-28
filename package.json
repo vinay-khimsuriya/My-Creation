@@ -7,6 +7,10 @@
     "start": "parcel index.html",
     "test": "jest"
   },
+  "staticFiles": {
+    "staticPath": "src/static",
+    "outputPath": "dist/static"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinay-khimsuriya/My-Creation.git"
@@ -27,9 +31,19 @@
   "dependencies": {
     "parcel": "^2.12.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
+    "parcel-plugin-copy": "^1.0.2",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "process": "^0.11.10"
+  },
+  "parcel": {
+    "transformers": {
+      "*.mp4": ["@parcel/transformer-raw"]
+    }
   }
 }
